@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tuition Website | Learn with Confidence</title>
+
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Italianno&family=Poppins:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    
+
+    <header class="hero" id="home">
+
+        <div class="hero-overlay"></div>
+
+
+
+        
+<div class="hero-content">
+    <p class="eyebrow">A BETTER WAY TO LEARN</p>
+
+    <h1>Welcome to <span>Tuition</span></h1>
+
+    <p class="hero-description">
+        Learn with confidence. Grow with knowledge.
+        Build a brighter future, one lesson at a time.
+    </p>
+
+    <div class="subjects-display">
+        <h2 class="frame-label">EXPLORE OUR SUBJECTS</h2>
+
+        <div class="subject-carousel" aria-label="Our subjects">
+            <div class="carousel-track" id="carouselTrack"></div>
+        </div>
+    </div>
+
+     
+</div>
+
+
+        <div class="hero-bottom">
+            <span>LEARN</span>
+            <span class="bottom-dot"></span>
+            <span>GROW</span>
+            <span class="bottom-dot"></span>
+            <span>SUCCEED</span>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="classes-section" id="classes">
+
+            <div class="section-heading">
+                <p class="eyebrow">FIND YOUR CLASS</p>
+                <h2>Select Your <span>Class</span></h2>
+              
+            </div>
+
+            <div class="class-grid">
+                <button class="class-card" data-class="8">08</button>
+                <button class="class-card" data-class="9">09</button>
+                <button class="class-card" data-class="10">10</button>
+                <button class="class-card" data-class="11">11</button>
+                <button class="class-card" data-class="12">12</button>
+            </div>
+
+            <p class="selected-message" aria-live="polite">
+                Select a class to continue
+            </p>
+
+        </section>
+
+        <section class="subjects-section" id="subjects">
+
+            <div class="section-heading">
+                <p class="eyebrow">LEARN SOMETHING NEW</p>
+                <h2>Subjects We <span>Offer</span></h2>
+                <p>Strong foundations. Clear concepts. Confident learning.</p>
+            </div>
+
+            <div class="subject-grid">
+
+                <article class="subject-card biology">
+                    <div class="subject-image">
+                        <img src="images/biology.jpg" alt="Biology lettering">
+                    </div>
+                    <div class="subject-card-info">
+                        <span>01</span>
+                        <h3>Biology</h3>
+                        <p>Explore the science of life.</p>
+                    </div>
+                </article>
+
+                <article class="subject-card mathematics">
+                    <div class="subject-image">
+                        <img src="images/maths.jpg" alt="Mathematics lettering">
+                    </div>
+                    <div class="subject-card-info">
+                        <span>02</span>
+                        <h3>Mathematics</h3>
+                        <p>Build logic and problem-solving skills.</p>
+                    </div>
+                </article>
+
+                <article class="subject-card physics">
+                    <div class="subject-image">
+                        <img src="images/physics.jpg" alt="Physics lettering">
+                    </div>
+                    <div class="subject-card-info">
+                        <span>03</span>
+                        <h3>Physics</h3>
+                        <p>Understand how the world works.</p>
+                    </div>
+                </article>
+
+                <article class="subject-card chemistry">
+                    <div class="subject-image">
+                        <img src="images/chemistry.jpg" alt="Chemistry lettering">
+                    </div>
+                    <div class="subject-card-info">
+                        <span>04</span>
+                        <h3>Chemistry</h3>
+                        <p>Discover the science of matter.</p>
+                    </div>
+                </article>
+
+                <article class="subject-card english">
+                    <div class="subject-image english-image">
+                        <img src="images/english.jpg" alt="English lettering">
+                         
+                    </div>
+                    <div class="subject-card-info">
+                        <span>05</span>
+                        <h3>English</h3>
+                        <p>Improve language and communication.</p>
+                    </div>
+                </article>
+                
+<article class="subject-card exam-card">
+    <div class="subject-image">
+        <img src="images/exam.png"
+             alt="Exam Preparation study desk">
+    </div>
+
+    <div class="subject-card-info">
+        <span>06</span>
+        <h3>Exam Preparation</h3>
+        <p>Practice, revise and prepare with confidence.</p>
+    </div>
+</article>
+
+
+            </div>
+
+        </section>
+
+        <section class="contact-section" id="contact">
+            <p class="eyebrow">YOUR JOURNEY STARTS HERE</p>
+            <h2>Ready to <span>Begin?</span></h2>
+            <p>Take the next step towards learning with confidence.</p>
+             
+<a href="https://wa.me/919876543210?text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20your%20tuition%20classes."
+   class="cta-button"
+   target="_blank"
+   rel="noopener noreferrer">
+    Contact Us on WhatsApp
+</a>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <a href="#home" class="footer-logo">Tuition<span>.</span></a>
+        <p>Learn with purpose. Grow with confidence.</p>
+        <span class="copyright">© 2026 Tuition Website</span>
+    </footer>
+
+    <script>
+        const classCards = document.querySelectorAll(".class-card");
+        const selectedMessage = document.querySelector(".selected-message");
+        const subjectsSection = document.querySelector("#subjects");
+
+        classCards.forEach((card) => {
+            card.addEventListener("click", () => {
+                classCards.forEach((item) => {
+                    item.classList.remove("selected");
+                });
+
+                card.classList.add("selected");
+
+                selectedMessage.textContent =
+                    "Class " + card.dataset.class + " selected — explore your subjects!";
+
+                subjectsSection.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+            });
+        });
+    </script>
+
+
+<script>
+const subjects = [
+    "Biology",
+    "Mathematics",
+    "Physics",
+    "Chemistry",
+    "English"
+];
+
+const track = document.getElementById("carouselTrack");
+
+let activeIndex = 1;
+const items = [];
+
+subjects.forEach((name) => {
+    const item = document.createElement("span");
+    item.className = "carousel-subject";
+    item.textContent = name;
+
+    track.appendChild(item);
+    items.push(item);
+});
+
+
+function updateCarousel() {
+    items.forEach((item, index) => {
+        let offset = index - activeIndex;
+
+        if (offset > 2) offset -= subjects.length;
+        if (offset < -2) offset += subjects.length;
+
+        item.style.left = `${50 + offset * 19}%`;
+
+        item.classList.toggle("is-active", offset === 0);
+
+        // Fade the outermost subjects
+        item.classList.toggle("edge-fade", Math.abs(offset) === 2);
+    });
+}
+
+
+updateCarousel();
+
+setInterval(() => {
+    activeIndex = (activeIndex + 1) % subjects.length;
+    updateCarousel();
+}, 2000);
+</script>
+
+</body>
+</html>
+
+</body>
+</html>
